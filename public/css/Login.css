@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Vina Sans', cursive;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-size: large;
+}
+
+:root{
+    --main-color:#ffd600;
+    --text-color:#fff;
+    --bg-color:#3a3a3b;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+body{
+    display: flex;
+    font-family: 'Vina Sans', cursive;
+    min-height: 100vh;
+    color: 	#fff;
+    background-image: url(../img/background.png);
+    background-size: 100%;
+}
+.trans{
+    margin-left: 50%;
+    background-color: #ffd600;
+    width: 100%;
+    height: 791px;
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+}
+.container .drop{
+    position: relative;
+    width: 450px;
+    height: 400px;
+    box-shadow: inset 20px 20px 20px rgba(58, 100, 6, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05),
+    25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -10px -10px 50px #ffffff;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:110px ;
+}
+.container .drop:hover{
+    border-radius: 120px;
+}
+
+.container .drop .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+.container .drop .content h2{
+    position: relative;
+    color: 	#3a3a3b;
+    font-size:2em;
+}
+.container .drop .content form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.container .drop .content form .inputBox{
+    position: relative;
+    width: 225px;
+    box-shadow: inset 20px 50px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -3px 1px #ffffff,
+    25px 25px 20px rgba(0, 0, 0, 0.05),
+    25px 20px 25px rgba(0, 0, 0, 0.025);
+    border-radius: 35px;
+    font-weight:300;
+}
+.container .drop .content form .inputBox input{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #FFF;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+    font-weight: 300;
+}
+.container .drop .content form .inputBox input[type="submit"]{
+    color: 	#3a3a3b;
+    font-size: 1.5em;
+    cursor: pointer;
+    letter-spacing: .1em;
+    font-weight: bold;
+}
+.container .drop .content form .inputBox:last-child{
+    width: 120px;
+    background: transparent;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px #fff,
+    5px 15px 10px rgba(0, 0, 0, 0.1),
+    5px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: .5s;
+}
+.container .drop .content form .inputBox:last-child:hover{
+width: 180px;
+}
+.btns{
+    position: absolute;
+    right: 50px;
+    top: 110%;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: 	#3a3a3b;
+    line-height: 1.2em;
+    letter-spacing: .1em;
+    font-size: 1.2em;
+    transition: .25s;
+    box-shadow: inset 150px 15px 15px rgba(255, 255, 255, 0.05),
+    5px 2px 2px #ffd600,
+    inset -4px -4px 10px #fff;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+.btns:hover{
+    border-radius: 30px;   
+}
+
+.btns.signup{
+    width: 80px;
+    height:80px;
+    right: -50px;
+    border-radius: 20px;
+}
+.btns.signup:hover{
+    border-radius: 30px;   
+}
+.btns.s{
+    width: 120px;
+    height:100px;
+    bottom: 260px;
+    right: -100px;
+    border-radius: 20px;
+}
+.btns.s:hover{
+    border-radius: 30px; 
+}
+
+
+.social{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social a{
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+    background: #FFF;
+    color: #3a3a3b;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 50%;
+    transition: .4s;
+    margin-left: 5px;
+}
+.social a:hover{
+    transform: scale(1.2);
+    color: var(--bg-color);
+    background: var(--text-color);
+}
+i{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 7px;
+    font-size: 30px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* background color of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #ffd600;
+  }
+  
+  /* color of the scrollbar handle */
+  ::-webkit-scrollbar-thumb {
+    background: #fff;
+  }
+  
+  /* color on hover of the scrollbar handle */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+

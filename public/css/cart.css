@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#ffd600;
+    --text-color:#fff;
+    --bg-color:#080705;
+    --big-font:5rem;
+    --h2-font:2.25rem;
+    --p-font:0.9rem;
+}
+body{
+    background-color: #000;
+    color: white;
+    font-family: 'Vina Sans', cursive;
+}
+section{
+    margin-top: 2%;
+}
+.burger-info-cart{
+    font-size: 1.2rem;
+    font-weight:lighter;
+}
+#quantity-input{
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+}
+.submitB{
+    align-items: center;
+    margin-left: 45%;
+    padding: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    color: var(--main-color);
+    border-radius: 20px;
+    width: 100px;
+    font-family: 'Vina Sans', cursive;
+    font-size: large;
+    transition: 1s;
+}
+.submitB:hover{
+    background-color: var(--main-color);
+    color: var(--text-color);
+    width: 120px;
+}
+.minus-btn,
+.plus-btn {
+    margin: auto ;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+}
+.plus-btn{
+    font-size: 1.5rem;
+}
+.minus-btn{
+    font-size: 2rem;
+}
+h1{
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.bx{
+    color: #FFF;
+    position: relative;
+    top: 5px;
+    width: 50px;
+    font-size: 30px;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+.cart-page{
+    display: flex;
+    margin: 50px 20px;
+}
+table{
+    border: 1px solid #ffd600;
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+.tr{
+    border: 1px solid #ffd600;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #FFF;
+    background-color: var(--main-color);
+    font-weight: 100;
+    font-size: large;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: red;
+    font-size: 12px;
+    text-decoration: none;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border: 1px solid grey;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 170px;
+    background: var(--bg-color);
+}
+.logo img{ 
+    font-size: 2.4rem;
+    background-color: white;
+}
+.navbar{
+    display: flex;
+}
+#menu-icon{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; 
+ }
+.navbar a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    transition: .4s;
+}
+.title{
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+}
+@media(max-width:1140px){
+    header .navbar{
+        position: absolute;
+        top: -2000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: #21201e;
+        transition: .3s;
+
+    }
+    header .navbar.active{
+        top: 70px;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+    }
+    .col{
+        width: 50%;
+        margin-bottom: 10px;
+    }}
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      
+      /* background color of the scrollbar track */
+      ::-webkit-scrollbar-track {
+        background: #ffd600;
+      }
+      
+      /* color of the scrollbar handle */
+      ::-webkit-scrollbar-thumb {
+        background: #fff;
+      }
+      
+      /* color on hover of the scrollbar handle */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fff;
+      }
